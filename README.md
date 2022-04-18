@@ -1,5 +1,6 @@
 # ssiscicd
 Demo code for SQL Server Integration Services Continuous Integration Continuous Delivery on Microsoft Azure Cloud
+Presentation recording is available at https://youtu.be/nuGf6f1Bhj0
 
 ANNOYANCE @MICROSOFT: To use Visual Studio 2019 and Docker together, you must have Docker Desktop setup on your VM. However Docker Desktop is not available for Windows Server 2019, only Windows 10. You must use Windows Server 2019 as the base OS for windows containers running on AKS. So despite including container support in VS2019, that support is meaningless when trying to build windows containers for AKS.
 
