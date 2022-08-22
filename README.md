@@ -2,14 +2,6 @@
 Demo code for SQL Server Integration Services Continuous Integration Continuous Delivery on Microsoft Azure Cloud
 Presentation recording is available at https://youtu.be/nuGf6f1Bhj0
 
-ANNOYANCE @MICROSOFT: To use Visual Studio 2019 and Docker together, you must have Docker Desktop setup on your VM. However Docker Desktop is not available for Windows Server 2019, only Windows 10. You must use Windows Server 2019 as the base OS for windows containers running on AKS. So despite including container support in VS2019, that support is meaningless when trying to build windows containers for AKS.
-
-ANNOYANCE @MICROSOFT: In order to deploy dacpacs which reference the master db, the master.dacpac (and probably msdb.dacpac) are required to be included in the project. Why is this? It seems like sqlpackage should be smart enough to allow users to circumvent the errors, and assume that a master db exists, as an option.
-
-ANNOYANCE @MICROSOFT: Why does the Powershell@1 task wait for the script to finish and Powershell@2 does not? Very confusing, please explain. "This is a breaking change."
-
-ANNOYANCE @MICROSOFT: Why is not possible to extract the commandOutput easily into a variable when using Kubernetes@1? Not being able to do this means that get and describe are basically worthless when used in this task. You must write a script task instead.
-
 ## Setup Agent for DevOps Pipeline
 1. Create a Dev Test Lab environment and new Dev Test Lab VM "Visual Studio 2019 Community (latest release) on Windows 10 Enterprise N (x64)"
 1. Sign in
